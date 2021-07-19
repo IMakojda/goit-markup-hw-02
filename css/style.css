@@ -58,6 +58,7 @@ body {
 }
 
 .hero-section {
+  font-family: inherit;
   background-color: #2f303a;
   width: 1600px;
   height: 600px;
@@ -70,11 +71,12 @@ body {
 }
 
 .btn-order-service {
+  font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--akcent-color);
+  color: var(--text-hero-section-logo-light);
 }
 
 .advantages-title {
