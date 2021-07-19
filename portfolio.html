@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Шапка сторінки -->
     <header>
         <nav>
-            <a href="./index.html">WebStudio</a>
-            <ul>
+            <a href="./index.html" class="logo-dark"><span class="web">Web</span>Studio</a>
+            <ul class="nav-bar">
                 <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
+                <li><a href="./portfolio.html" class="link-current">Портфолио</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
         </nav>
         <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
 <!-- Головна частина сторінки -->
     <main>
         <Section>
-            
-            <button type="button">Все</button>
-            <button type="button">Веб-сайты</button>
-            <button type="button">Приложения</button>
-            <button type="button">Дизайн</button>
-            <button type="button">Маркетинг</button>
-
-        </Section>
-        <section>
-        <ul>
+            <div class="filter-box-portfolio">
+            <button type="button" class="filter-btn">Все</button>
+            <button type="button" class="filter-btn">Веб-сайты</button>
+            <button type="button" class="filter-btn">Приложения</button>
+            <button type="button" class="filter-btn">Дизайн</button>
+            <button type="button" class="filter-btn">Маркетинг</button>
+            </div>
+                   
+        <ul class="our-work">
             <li>
                 <img src="./images/portfolio/open_web_pages_on_laptop.jpg" 
                 alt="open web pages on laptop"
@@ -117,15 +117,15 @@
 
     </main>
 
-<!-- Нижній колонтитул сторінки -->
+<!-- Футер-->
     <footer>
-        <div>
-            <a href="./index.html">WebStudio</a>
+        <div class="footer">
+            <a href="./index.html" class="logo-light"><span class="web">Web</span>Studio</a>
             <address>
-                <ul>
-                    <li>г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <p class="adress-line">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact">
+                    <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
