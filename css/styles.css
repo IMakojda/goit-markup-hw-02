@@ -5,55 +5,63 @@
   --text-hero-section-logo-light: #ffffff; /*колір тексту секція героя*/
   --akcent-color: #2196f3; /*колір активного стану ссилок кнопки*/
   --footer-contact-color: rgba(255, 255, 255, 0.6); /* колір ссилок футера*/
+  --font-weight: 700; /*Bold*/
 }
 
 body {
-  font-family: Roboto, Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
   width: 1600px;
   height: 2300px;
   color: #212121;
   background-color: #e5e5e5;
+  letter-spacing: 0.03em;
 }
-/*  */
+/*  Studia Page */
+
 .logo-dark {
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: var(--font-weight);
+  font-size: 26px; /* лого хедер*/
   line-height: 31px;
   text-decoration: none;
   color: var(--logo-color-dark);
 }
 .web {
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: var(--font-weight);
+  font-size: 26px; /* лого хедер*/
   line-height: 31px;
   text-decoration: none;
   color: var(--akcent-color);
 }
 .nav-bar a {
+  text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14px; /* навігація сайту*/
   line-height: 16px;
   color: var(--text-title-color-btn-dark);
 }
 
 .nav-bar a:hover,
 .nav-bar a:focus {
+  text-decoration: none; /* фокус кнопок навігації*/
   color: var(--akcent-color);
 }
 
 .nav-bar .link-current {
-  color: var(--akcent-color);
+  text-decoration: none;
+  color: var(--akcent-color); /* фокус ссилок навігації*/
 }
 
 .contact {
+  text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14px; /* контакти*/
   line-height: 16px;
   color: var(--text-subtitle-color);
 }
 .contact:hover,
 .contact:focus {
+  text-decoration: none; /* фокус на контактах*/
   color: var(--akcent-color);
 }
 
@@ -68,35 +76,40 @@ body {
   font-size: 44px;
   line-height: 60px;
   color: var(--text-hero-section-logo-light);
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .btn-order-service {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: inherit;
+  font-weight: var(--font-weight);
+  font-size: 16px; /* кнопк азаказать услугу*/
   line-height: 30px;
   background-color: var(--akcent-color);
   color: var(--text-hero-section-logo-light);
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.06em;
 }
 
-.advantages-title {
-  font-weight: bold;
+.advantages-section h3 {
+  font-weight: var(--font-weight); /* секція наші переваги*/
   font-size: 14px;
   line-height: 16px;
 }
 .advantages-description {
-  font-size: 14px;
+  font-size: 14px; /* секція наші переваги*/
   line-height: 24px;
   color: var(--text-subtitle-color);
 }
 .what-we-do {
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 36px;
   line-height: 42px;
 }
 
 .team-title {
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 36px;
   line-height: 42px;
 }
@@ -115,7 +128,7 @@ body {
 .logo-light {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
@@ -132,13 +145,15 @@ body {
   color: var(--footer-contact-color);
 }
 
-/* portfolio */
+/* Portfolio Page*/
+
 .filter-box-portfolio button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: var(--text-title-color-btn-dark);
+  cursor: pointer;
 }
 .filter-box-portfolio button:focus,
 .filter-box-portfolio button:hover {
@@ -146,8 +161,8 @@ body {
   background-color: var(--akcent-color);
 }
 
-.our-work h1 {
-  font-weight: bold;
+.our-work h2 {
+  font-weight: var(--font-weight);
   font-size: 18px;
   line-height: 36px;
 }
