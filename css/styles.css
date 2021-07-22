@@ -5,32 +5,37 @@
   --text-hero-section-logo-light: #ffffff; /*колір тексту секція героя*/
   --akcent-color: #2196f3; /*колір активного стану ссилок кнопки*/
   --footer-contact-color: rgba(255, 255, 255, 0.6); /* колір ссилок футера*/
-  --font-weight: 700; /*Bold*/
+  --font-weight-bold: 700; /*Bold*/
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: #212121;
-  background-color: #e5e5e5;
+  color: var(--text-title-color-btn-dark);
+  background-color: var(--text-hero-section-logo-light);
   letter-spacing: 0.03em;
 }
+ul {
+  list-style: none;
+}
+
 /*  Studia Page */
 
 .logo-dark {
   font-family: Raleway;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 26px; /* лого хедер*/
   line-height: 31px;
   text-decoration: none;
   color: var(--logo-color-dark);
 }
 .web {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 26px; /* лого хедер*/
   line-height: 31px;
   text-decoration: none;
   color: var(--akcent-color);
 }
+
 .nav-bar a {
   text-decoration: none;
   font-weight: 500;
@@ -76,11 +81,12 @@ body {
   color: var(--text-hero-section-logo-light);
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .btn-order-service {
   font-family: inherit;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 16px; /* кнопк азаказать услугу*/
   line-height: 30px;
   background-color: var(--akcent-color);
@@ -90,10 +96,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.advantages-section h3 {
-  font-weight: var(--font-weight); /* секція наші переваги*/
+.advantages-title {
+  font-weight: var(--font-weight-bold); /* секція наші переваги*/
   font-size: 14px;
   line-height: 16px;
+  text-transform: uppercase;
 }
 .advantages-description {
   font-size: 14px; /* секція наші переваги*/
@@ -101,13 +108,13 @@ body {
   color: var(--text-subtitle-color);
 }
 .what-we-do {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 42px;
 }
 
 .team-title {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 42px;
 }
@@ -126,7 +133,7 @@ body {
 .logo-light {
   font-family: Raleway;
   font-style: normal;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-bold);
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
@@ -137,10 +144,13 @@ body {
   height: 252px;
   background-color: #2f303a;
 }
+.adress {
+  font-style: normal;
+}
 .adress-line {
   font-size: 14px;
   line-height: 24px;
-  color: var(--footer-contact-color);
+  color: var(--text-hero-section-logo-light);
 }
 
 /* Portfolio Page*/
@@ -159,14 +169,16 @@ body {
   background-color: var(--akcent-color);
 }
 
-.our-work h2 {
-  font-weight: var(--font-weight);
+.sign-work {
+  font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 36px;
+  letter-spacing: 0.06em;
 }
 
-.our-work p {
+.filter-work-sign {
   font-size: 16px;
   line-height: 30px;
   color: var(--text-subtitle-color);
+  letter-spacing: 0.03em;
 }
